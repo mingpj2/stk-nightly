@@ -14,3 +14,11 @@ trigger
 ===========
 
 http://traviscron.pythonanywhere.com/
+
+
+
+reference
+===========
+
+https://github.com/travis-ci/travis-ci/issues/582
+
