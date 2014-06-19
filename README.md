@@ -7,3 +7,10 @@ stk-nightly
 ===========
 
 nightly build of supertuxkart/stk-code
+
+
+
+trigger
+===========
+
+http://traviscron.pythonanywhere.com/
