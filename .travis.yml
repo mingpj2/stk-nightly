@@ -1,0 +1,37 @@
+# Travis-CI configuration file for SuperTuxKart
+#
+# Configuration manual:
+# http://docs.travis-ci.com/user/build-configuration/
+#
+language: cpp
+compiler:
+  - gcc
+
+before_install:
+  # Update repos
+  - date
+  - sudo apt-get update -qq
+  - date
+
+  - ls -l
+  - pwd
+  - whoami
+  - uname -a
+  - echo "TRAVIS_BUILD_DIR $TRAVIS_BUILD_DIR"
+  - echo "TRAVIS_BRANCH    $TRAVIS_BRANCH"
+  - date
+  - echo "HOME $HOME"
+  - ls -lad $HOME
+  - pwd
+
+script:
+  #  Build commands
+  - pwd
+  - ls -l
+  - mkdir build
+  - cd build
+  - pwd
+  - echo '#include <stdio.h>' > t.c
+  - echo 'int main(int argc, char *argv[]){ printf("Hello world!\n"); return 0; }' >> t.c
+  - gcc t.c
+  - ls -l 
